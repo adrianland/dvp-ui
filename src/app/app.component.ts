@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgToastService } from "ng-angular-popup";
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(private toast:NgToastService){
+
+  }
   title = 'dvp-ui';
 }
